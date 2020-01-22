@@ -2,6 +2,7 @@
   package="com.mapex">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
       android:name=".MainApplication"
@@ -15,7 +16,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCMTFPtB1sHjDg7cyruGqcOhZJ_oIg9LDg"/>
 
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
@@ -28,5 +28,7 @@
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
+
+    
 
 </manifest>

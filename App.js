@@ -39,7 +39,6 @@ const App: () => React$Node = () => {
         longitudeDelta: 0.00421
       }}
      >
-
      </MapView>
     </>
   );
