@@ -23,7 +23,17 @@ const App = () => {
             console.log("start --------------------------------")
             console.log(data)
             setPosition(data.coords)
-        })
+        }, 
+        error => {
+            console.log(err)
+        },
+        {
+            enableHighAccuracy: true,
+            distanceFilter: 100,
+            interval: 5000,
+            fastestInterval: 2000,
+        }
+        )
 
         let id = Geolocation.watchPosition((data) => {
                 console.log("watch --------------------------------")
